@@ -1,0 +1,16 @@
+version: 1.0.{build}
+build_script:
+- ps: >-
+    git submodule update --init
+
+    md .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo
+
+    md .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo\buildlogs
+
+
+    cp .\pogo_artifacts\run_build.ps1 .\ChakraCore\Build\scripts\ -force
+
+    cp .\pogo_artifacts\pogo_training.ps1 .\ChakraCore\Build\scripts\pgo\ -force
+
+
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch x64 -flavor Release -subtype pogo -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x64_release_pogo\" -binDir ".\ChakraCore\Build\VcBuild\bin\x64_release_pogo\" -logFile ".\ChakraCore\Build\VcBuild\bin\x64_Release_pogo\pogo_build_log.txt" -scenarios ".\pogo_artifacts\tets.js" -binaryName "ch.exe"
