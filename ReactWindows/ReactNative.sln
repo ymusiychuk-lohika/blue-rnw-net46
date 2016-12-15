@@ -251,8 +251,8 @@ Global
 		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.Release|x86.Build.0 = Release|x86
 		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|ARM.ActiveCfg = Release|ARM
 		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|ARM.Build.0 = Release|ARM
-		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|x64.ActiveCfg = Release|x64
-		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|x64.Build.0 = Release|x64
+		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|x64.ActiveCfg = ReleaseBundle|x64
+		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|x64.Build.0 = ReleaseBundle|x64
 		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|x86.ActiveCfg = Release|x86
 		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.ReleaseBundle|x86.Build.0 = Release|x86
 	EndGlobalSection

@@ -109,3 +109,16 @@ The React Native Windows plugin is provided under the [MIT License](LICENSE).
 ## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## My 5th cents
+
+### How to build Playground.Net46
+
+To build bundle
+```
+react-native bundle --platform windows --dev false --entry-file ReactWindows/Playground.Net46/index.windows.js --bundle-output ReactWindows/Playground.Net46/assets/index.windows.bundle
+```
+
+Then buuild ReleaseBundle cfg from solution.
+Then copy the bundle to binFolder/ReactAssets/
+Then copy chackracore.dll to   binFolder
