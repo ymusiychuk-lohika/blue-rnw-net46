@@ -83,7 +83,6 @@ Global
 		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|ARM.Build.0 = ReleaseBundle|ARM
 		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|ARM.Deploy.0 = ReleaseBundle|ARM
 		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|x64.ActiveCfg = ReleaseBundle|x64
-		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|x64.Build.0 = ReleaseBundle|x64
 		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|x64.Deploy.0 = ReleaseBundle|x64
 		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|x86.ActiveCfg = ReleaseBundle|x86
 		{D52267B5-396F-424A-BB26-C9E750032846}.ReleaseBundle|x86.Build.0 = ReleaseBundle|x86
@@ -109,7 +108,6 @@ Global
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.ReleaseBundle|ARM.ActiveCfg = Release|ARM
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.ReleaseBundle|ARM.Build.0 = Release|ARM
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.ReleaseBundle|x64.ActiveCfg = Release|x64
-		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.ReleaseBundle|x64.Build.0 = Release|x64
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.ReleaseBundle|x86.ActiveCfg = Release|x86
 		{C7673AD5-E3AA-468C-A5FD-FA38154E205C}.ReleaseBundle|x86.Build.0 = Release|x86
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.Debug|ARM.ActiveCfg = Debug|ARM
@@ -143,7 +141,6 @@ Global
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|ARM.Build.0 = Release|ARM
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|ARM.Deploy.0 = Release|ARM
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|x64.ActiveCfg = Release|x64
-		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|x64.Build.0 = Release|x64
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|x64.Deploy.0 = Release|x64
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|x86.ActiveCfg = Release|x86
 		{5AC8108B-1C39-4C4A-8653-DBBE4ECCE691}.ReleaseBundle|x86.Build.0 = Release|x86
@@ -229,7 +226,6 @@ Global
 		{E02ED054-4FB2-4EEB-8835-36A5E542E368}.Release|x86.Build.0 = Release|Win32
 		{E02ED054-4FB2-4EEB-8835-36A5E542E368}.ReleaseBundle|ARM.ActiveCfg = Release|x64
 		{E02ED054-4FB2-4EEB-8835-36A5E542E368}.ReleaseBundle|x64.ActiveCfg = Release|x64
-		{E02ED054-4FB2-4EEB-8835-36A5E542E368}.ReleaseBundle|x64.Build.0 = Release|x64
 		{E02ED054-4FB2-4EEB-8835-36A5E542E368}.ReleaseBundle|x86.ActiveCfg = Release|Win32
 		{E02ED054-4FB2-4EEB-8835-36A5E542E368}.ReleaseBundle|x86.Build.0 = Release|Win32
 		{7AB3A24A-D5D9-479F-8E12-22213DD40D3F}.Debug|ARM.ActiveCfg = Debug|ARM
