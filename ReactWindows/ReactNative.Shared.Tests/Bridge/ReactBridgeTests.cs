@@ -58,6 +58,7 @@ namespace ReactNative.Tests.Bridge
             });
         }
 
+        [Ignore]
         [Test]
         public async Task ReactBridge_CallFunction()
         {
