@@ -22,5 +22,5 @@ do {
 Write-Host ' found!'
 Start-Sleep -Seconds 10
 
-Stop-Process -processname $processName
+$proc | Foreach-Object { $_.CloseMainWindow() }
 
