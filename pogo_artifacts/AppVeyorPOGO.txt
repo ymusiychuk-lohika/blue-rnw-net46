@@ -18,10 +18,11 @@ build_script:
     cp .\pogo_artifacts\assets\* .\ReactWindows\Playground.Net46\bin\x64\ReleaseBundle\ReactAssets\ -force
 
 
-    md .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo
+    md .\ChakraCore\Build\VcBuild.NoJIT\bin\x64_Release_pogo
 
 
-    md .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo\buildlogs
+    md .\ChakraCore\Build\VcBuild.NoJIT\buildlogs
+    md .\ChakraCore\Build\VcBuild.NoJIT\logs\
 
 
 
@@ -30,18 +31,20 @@ build_script:
     cp .\pogo_artifacts\pogo_training.ps1 .\ChakraCore\Build\scripts\pgo\ -force
 
 
-    cp .\ReactWindows\Playground.Net46\bin\x64\ReleaseBundle\* .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo
+    cp .\ReactWindows\Playground.Net46\bin\x64\ReleaseBundle\* .\ChakraCore\Build\VcBuild.NoJIT\bin\x64_Release_pogo
 
-    cp .\pogo_artifacts\assets\* .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo\ReactAssets\ -force
+    cp .\pogo_artifacts\assets\* .\ChakraCore\Build\VcBuild.NoJIT\bin\x64_Release_pogo\ReactAssets\ -force
 
 
     Start-Process powershell -ArgumentList '.\pogo_artifacts\PlaygroundTerminator.ps1' -WindowStyle Minimized
 
 
-    .\ChakraCore\Build\scripts\run_build.ps1 -arch x64 -flavor Release -subtype pogo -solutionFile ".\ChakraCore\Build\Chakra.Core.sln"-binpath ".\ChakraCore\Build\VcBuild\bin\x64_release_pogo\" -binDir ".\ChakraCore\Build\VcBuild\bin\x64_release_pogo\" -logFile ".\ChakraCore\Build\VcBuild\bin\x64_Release_pogo\pogo_build_log.txt" -scenarios ".\pogo_artifacts\tets.js" -binaryName "Playground.Net46.exe"
+    .\ChakraCore\Build\scripts\run_build.ps1 -arch x64 -flavor Release -subtype pogo -solutionFile ".\ChakraCore\Build\Chakra.Core.sln" -buildRoot ".\ChakraCore\Build\VcBuild.NoJIT\" -logFile ".\ChakraCore\Build\VcBuild.NoJIT\bin\x64_Release_pogo\pogo_build_log.txt" -scenarios ".\pogo_artifacts\tets.js" -binaryName "Playground.Net46.exe" -additionalInputParams "/p:BuildJIT=false"
 
 
-    cp .\ChakraCore\Build\VcBuild\bin\x64_Release_pogo\ChakraCore.dll .\ReactWindows\Playground.Net46\bin\x64\ReleaseBundle\ -force
+
+
+    cp .\ChakraCore\Build\VcBuild.NoJIT\bin\x64_Release_pogo\ChakraCore.dll .\ReactWindows\Playground.Net46\bin\x64\ReleaseBundle\ -force
 
 
     ls .\ReactWindows\Playground.Net46\bin\x64\ReleaseBundle
